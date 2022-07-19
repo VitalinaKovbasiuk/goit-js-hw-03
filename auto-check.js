@@ -229,7 +229,8 @@
 /* Завдання 9 автоперевірка
  */
 // ОБЧИСЛЮВАНІ ВЛАСТИВОСТІ
-// Доповни код оголошення об'єкта credentials таким чином, щоб в результаті у нього були дві властивості: email і password, імена яких зберігаються у змінних emailInputName і passwordInputName.
+// Доповни код оголошення об'єкта credentials таким чином, щоб в результаті у нього були дві властивості: email і password, 
+// імена яких зберігаються у змінних emailInputName і passwordInputName.
 // Значенням властивості email повинен бути рядок "henry.carter@aptmail.com", а значенням властивості password - рядок "jqueryismyjam".
 // const emailInputName = "email";
 // const passwordInputName = "password";
@@ -250,12 +251,41 @@
  */
 // ЦИКЛ FOR...IN
 // Перебери об'єкт apartment, використовуючи цикл for...in, і запиши в масив keys всі його ключі, а в масив values всі значення його властивостей.
+// const apartment = {
+//     descr: "Spacious apartment in the city center",
+//     rating: 4,
+//     price: 2153,
+//   };
+//   const keys = ["descr", "rating", "price"];
+//   const values = ["Spacious apartment in the city center", 4, 2153];
+ 
+//   for (const keys in apartment) {
+//   console.log(keys);
+//     console.log(apartment[keys]);
+//   }
+
 
 
 
 
 /* Завдання 11 автоперевірка
  */
+// МЕТОД HASOWNPROPERTY()
+// Виконай рефакторинг рішення попереднього завдання, додавши в цикл for...in перевірку на власну властивість.
+// const apartment = Object.create(advert);
+// apartment.descr = "Spacious apartment in the city center";
+// apartment.rating = 4;
+// apartment.price = 2153;
+
+// for (const key in apartment) {
+  
+// if (apartment.hasOwnProperty(key)) {
+//     console.log(key);
+//     console.log(apartment[key]);
+//   keys.push(key);
+//   values.push(apartment[key]);
+// }
+// }
 
 
 
