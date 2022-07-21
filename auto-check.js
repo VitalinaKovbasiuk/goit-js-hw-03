@@ -316,18 +316,48 @@
 // МЕТОД OBJECT.KEYS()
 // Перебери об'єкт apartment, використовуючи метод Object.keys() 
 // і цикл for...of. Запиши у змінну keys масив ключів власних властивостей об'єкта apartment, і додай в масив values всі значення його властивостей.
+// const apartment = {
+//     descr: "Spacious apartment in the city center",
+//     rating: 4,
+//     price: 2153,
+//   };
+//   const values = [];
+//   const keys = Object.keys(apartment);
+//   for (const key of keys) {
+//   values.push(apartment[key])
+//     console.log(apartment[key]);
+//   }
+
+
 
 
 
 /* Завдання 14 автоперевірка
  */
-
- 
+// ЗАДАЧА. ПІДРАХУНОК ВЛАСТИВОСТЕЙ 2.0
+// Виконай рефакторинг функції countProps(object), використовуючи метод Object.keys() і, можливо, але не обов'язково, цикл for...of
+// function countProps(object) {
+//     let propCount = 0;
+//     const keys = Object.keys(object);
+//     return keys.length;
+//   }
+  
 
 
 
 /* Завдання 15 автоперевірка
  */
+// МЕТОД OBJECT.VALUES()
+// Запиши у змінну keys масив ключів власних властивостей об'єкта apartment, 
+// а у змінну values - масив всіх значень його властивостей. Використовуй методи Object.keys() і Object.values().
+// const apartment = {
+//     descr: "Spacious apartment in the city center",
+//     rating: 4,
+//     price: 2153,
+//   };
+//   const keys = Object.keys(apartment);
+//   const values = Object.values(apartment);
+  
 
 
 
@@ -335,6 +365,21 @@
 
 /* Завдання 16 автоперевірка
  */
+// ЗАДАЧА: ВИТРАТИ НА ЗАРПЛАТУ
+// Напиши функцію countTotalSalary(salaries), яка приймає об'єкт зарплат, 
+// де ім'я властивості - це ім'я співробітника, а значення властивості - це зарплата. 
+// Функція повинна розрахувати загальну суму зарплат співробітників і повернути її. 
+// Використовуй змінну totalSalary для зберігання загальної суми зарплати.
+// function countTotalSalary(salaries) {
+//     let totalSalary = 0;
+//   const value = Object.values(salaries);
+//   for (let i = 0; i < value.length; i += 1) {
+//     totalSalary += value[i];
+//   }
+//     return totalSalary;
+//   }
+  
+
 
 
 
@@ -342,6 +387,26 @@
 
 /* Завдання 17 автоперевірка
  */
+// МАСИВ ОБ'ЄКТІВ
+// Перебери масив об'єктів colors, використовуючи цикл for...of. 
+// Додай у масив hexColors значення властивостей hex, а в масив rgbColors - 
+// значення властивостей rgb з усіх об'єктів масиву colors.
+
+// const colors = [
+//     { hex: "#f44336", rgb: "244,67,54" },
+//     { hex: "#2196f3", rgb: "33,150,243" },
+//     { hex: "#4caf50", rgb: "76,175,80" },
+//     { hex: "#ffeb3b", rgb: "255,235,59" },
+//   ];
+//   const hexColors = [];
+//   const rgbColors = [];
+//   for (const color of colors) {
+//     hexColors.push(color.hex);
+//     rgbColors.push(color.rgb);
+//     console.log(hexColors);
+//   console.log(rgbColors);
+//   }
+
 
 
 
@@ -349,12 +414,44 @@
 
 /* Завдання 18 автоперевірка
  */
+// ЗАДАЧА. ПОШУК ОБ'ЄКТА ЗА ЗНАЧЕННЯМ ВЛАСТИВОСТІ
+// Напиши функцію getProductPrice(productName), яка приймає один параметр productName - назва продукту. 
+// Функція шукає об'єкт продукту з таким ім'ям (властивість name) в масиві products і повертає його ціну (властивість price). 
+// Якщо продукт з такою назвою не знайдений, функція повинна повертати null.
+// const products = [
+//     { name: "Radar", price: 1300, quantity: 4 },
+//     { name: "Scanner", price: 2700, quantity: 3 },
+//     { name: "Droid", price: 400, quantity: 7 },
+//     { name: "Grip", price: 1200, quantity: 9 },
+//   ];
+//   function getProductPrice(productName) {
+//   for (const product of products) {
+//     if (productName === product.name) {
+//   return (product.price);
+//     } 
+//   }
+//   return null;
+//   }
+  
 
 
 
 
 /* Завдання 19 автоперевірка
  */
+// ЗАДАЧА: КОЛЕКЦІЯ ЗНАЧЕНЬ ВЛАСТИВОСТІ
+// Напиши функцію getAllPropValues(propName), яка приймає один параметр propName - ім'я (ключ) властивості. 
+// Функція повинна повернути масив всіх значень властивості з таким ім'ям з кожного об'єкта в масиві products. 
+// Якщо в об'єктах відсутні властивості з таким ім'ям, функція повинна повернути порожній масив.
+const products = [
+    { name: "Radar", price: 1300, quantity: 4 },
+    { name: "Scanner", price: 2700, quantity: 3 },
+    { name: "Droid", price: 400, quantity: 7 },
+    { name: "Grip", price: 1200, quantity: 9 },
+  ];
+  function getAllPropValues(propName) {
+  
+  }
 
 
 
