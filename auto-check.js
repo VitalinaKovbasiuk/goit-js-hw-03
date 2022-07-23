@@ -445,7 +445,24 @@
 // Напиши функцію getAllPropValues(propName), яка приймає один параметр propName - ім'я (ключ) властивості. 
 // Функція повинна повернути масив всіх значень властивості з таким ім'ям з кожного об'єкта в масиві products. 
 // Якщо в об'єктах відсутні властивості з таким ім'ям, функція повинна повернути порожній масив.
-
+// const products = [
+//     { name: "Radar", price: 1300, quantity: 4 },
+//     { name: "Scanner", price: 2700, quantity: 3 },
+//     { name: "Droid", price: 400, quantity: 7 },
+//     { name: "Grip", price: 1200, quantity: 9 },
+//   ];
+//    function getAllPropValues(propName) {
+//   const allPropValues = [];
+//   for (const product of products) {
+//     for (const key in product) {
+// if (key === propName) {
+//  allPropValues.push(product[key]);
+// }
+//     }
+//   }
+//    return allPropValues;
+//    }
+  
 
 
 
@@ -455,6 +472,26 @@
 
 /* Завдання 20 автоперевірка
  */
+// ЗАДАЧА: ЗАГАЛЬНА ВАРТІСТЬ ТОВАРУ
+// Напиши функцію calculateTotalPrice(productName), яка приймає один параметр productName - назва товару. 
+// Функція повинна повернути загальну вартість (ціна * кількість) товару з таким ім'ям з масиву products.
+// const products = [
+//     { name: "Radar", price: 1300, quantity: 4 },
+//     { name: "Scanner", price: 2700, quantity: 3 },
+//     { name: "Droid", price: 400, quantity: 7 },
+//     { name: "Grip", price: 1200, quantity: 9 },
+//   ];
+//   function calculateTotalPrice(productName) {
+//   let totalPrise = 0;
+//   for (const product of products) {
+//       if(product.name === productName){
+  
+//       totalPrise = product.price * product.quantity;
+//     }
+//   }
+//   return totalPrise;
+//   }
+
 
 
 
@@ -462,6 +499,18 @@
 
 /* Завдання 21 автоперевірка
  */
+// ДЕСТРУКТУРИЗАЦІЯ ОБ'ЄКТІВ
+// Надійшов триденний прогноз максимальних температур і ми рахуємо середню температуру за три дні (meanTemperature). 
+// Заміни оголошення змінних yesterday, today і tomorrow однією операцією деструктуризації властивостей об'єкта highTemperatures.
+// const highTemperatures = {
+//     yesterday: 28,
+//     today: 26,
+//     tomorrow: 33,
+//   };
+//   const {yesterday, today, tomorrow} = highTemperatures;
+//   const meanTemperature = (yesterday + today + tomorrow) / 3;
+
+
 
 
 
@@ -469,14 +518,45 @@
 
 /* Завдання 22 автоперевірка
  */
+// ЗНАЧЕННЯ ЗА ЗАМОВЧУВАННЯМ
+// У прогнозі максимальних температур також може бути необов'язкова властивість icon - іконка погоди. 
+// Заміни оголошення змінних yesterday, today, tomorrow і icon однією операцією деструктуризації властивостей об'єкта highTemperatures. 
+// Задай значення за замовчуванням для icon - рядок "https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg".
+// const highTemperatures = {
+//     yesterday: 28,
+//     today: 26,
+//     tomorrow: 33,
+//   };
+//   const {yesterday, today, tomorrow, icon = "https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg",} = highTemperatures;
+//   const meanTemperature = (yesterday + today + tomorrow) / 3;
 
-  
+
+
 
 
 
 
 /* Завдання 23 автоперевірка
  */
+// ЗМІНА ІМЕНІ ЗМІННОЇ
+// Заміни оголошення змінних highYesterday, highToday, highTomorrow і highIcon однією операцією деструктуризації 
+// властивостей об'єкта highTemperatures. 
+// Задай значення за замовчуванням для highIcon - рядок "https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg".
+// const highTemperatures = {
+//     yesterday: 28,
+//     today: 26,
+//     tomorrow: 33,
+//   };
+//   const {
+//     yesterday: highYesterday,
+//     today: highToday,
+//     tomorrow: highTomorrow,
+//     icon: highIcon = "https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg",
+//   } = highTemperatures;
+//   const meanTemperature = (highYesterday + highToday + highTomorrow) / 3;
+
+
+
 
 
 
