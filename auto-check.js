@@ -483,28 +483,99 @@
 
 /* Завдання 24 автоперевірка
  */
-
+// ДЕСТРУКТУРИЗАЦІЯ В ЦИКЛАХ
+// Виконай рефакторинг циклу for...of таким чином, щоб в ньому використовувалася деструктуризація об'єкта.
+// const colors = [
+//     { hex: "#f44336", rgb: "244,67,54" },
+//     { hex: "#2196f3", rgb: "33,150,243" },
+//     { hex: "#4caf50", rgb: "76,175,80" },
+//     { hex: "#ffeb3b", rgb: "255,235,59" },
+//   ];
+//   const hexColors = [];
+//   const rgbColors = [];
+//   for (const {hex, rgb} of colors) {
+//     hexColors.push(hex);
+//     rgbColors.push(rgb);
+//   }
   
+
+
 
 
 
 /* Завдання 25 автоперевірка
  */
-
-
+// ГЛИБОКА ДЕСТРУКТУРИЗАЦІЯ
+// Ми отримали прогноз погоди на два дні, 
+// з мінімальними і максимальними температурами, 
+// а також необов'язковими іконками. 
+// Заміни оголошення всіх змінних однією операцією деструктуризації властивостей об'єкта forecast. 
+// Задай значення за замовчуванням для іконок, змінних todayIcon і 
+// tomorrowIcon - рядок "https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg".
+// const forecast = {
+//     today: {
+//       low: 28,
+//       high: 32,
+//       icon: "https://www.flaticon.com/svg/static/icons/svg/861/861059.svg",
+//     },
+//     tomorrow: {
+//       low: 27,
+//       high: 31,
+//     },
+//   };
+//   const {
+//    today: {
+//   high: highToday,
+//    low: lowToday,
+//    icon: todayIcon = "https://www.flaticon.com/svg/static/icons/svg/861/861059.svg",
+//    },
+//    tomorrow: {
+//      high: highTomorrow,
+//      low: lowTomorrow,
+//      icon: tomorrowIcon = "https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg",
+//    },
+//   } = forecast;
+  
+  
 
 
 
 
 /* Завдання 26 автоперевірка
  */
+// ПАТЕРН «ОБ'ЄКТ НАЛАШТУВАНЬ»
+// Функція calculateMeanTemperature(forecast) приймає один параметр forecast - об'єкт температур на два дні наступного формату.
+// {
+//   today: { low: 10, high: 20 },
+//   tomorrow: { low: 20, high: 30 }
+// }
+// Заміни оголошення змінних todayLow, todayHigh, tomorrowLow і tomorrowHigh однією операцією деструктуризації властивостей об'єкта forecast.
 
+// function calculateMeanTemperature(forecast) {
+//     const {
+//       today: {low: todayLow, high: todayHigh},
+//        tomorrow: {
+//        low: tomorrowLow, high: tomorrowHigh
+//      }} = forecast;
+//    return (todayLow + todayHigh + tomorrowLow + tomorrowHigh) / 4;
+//  }
   
+
+
 
 
 
 /* Завдання 27 автоперевірка
  */
+// ОПЕРАЦІЯ SPREAD ПРИ ПЕРЕДАЧІ АРГУМЕНТІВ
+// У змінній scores зберігається масив результатів тестування. Використовуючи розподіл і методи Math.max() і Math.min(), 
+// доповни код таким чином, щоб у змінній bestScore був найвищий бал, а у worstScore - найнижчий.
+// const scores = [89, 64, 42, 17, 93, 51, 26];
+// const bestScore = Math.max(...scores);
+// const worstScore = Math.min(...scores);
+// console.log(bestScore);
+// console.log(worstScore);
+
 
 
 
@@ -512,6 +583,22 @@
 
 /* Завдання 28 автоперевірка
  */
+// ОПЕРАЦІЯ SPREAD ПІД ЧАС СТВОРЕННЯ НОВОГО МАСИВУ
+// У змінних firstGroupScores, secondGroupScores і thirdGroupScores зберігаються результати тестування окремих груп. 
+// Використовуючи розподіл, доповни код таким чином, щоб:
+// У змінній allScores зберігався масив всіх результатів від першої до третьої групи.
+// У змінній bestScore був найвищий загальний бал.
+// У змінній worstScore був найнижчий загальний бал.
+// const firstGroupScores = [64, 42, 93];
+// const secondGroupScores = [89, 14, 51, 26];
+// const thirdGroupScores = [29, 47, 18, 97, 81];
+// const allScores = [...firstGroupScores, ...secondGroupScores, ...thirdGroupScores];
+// const bestScore = Math.max(...allScores);
+// const worstScore = Math.min(...allScores);
+//  console.log(allScores);
+//   console.log(bestScore);
+//    console.log(worstScore);
+
 
 
 
