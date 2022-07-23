@@ -550,6 +550,22 @@
 
 /* Завдання 33 автоперевірка
  */
+// ЗАДАЧА. МАСИВ ЗБІГІВ
+// Функція findMatches() приймає довільну кількість аргументів. 
+// Першим аргументом завжди буде масив чисел, а решта аргументів будуть просто числами.
+// Доповни код функції таким чином, щоб вона повертала новий масив matches, 
+// в якому будуть тільки ті аргументи, починаючи з другого, які є в масиві першого аргументу.
+// Наприклад, findMatches([1, 2, 3, 4, 5], 1, 8, 2, 7) повинна повернути масив [1, 2], тому що тільки вони є в масиві першого аргументу.
+
+// function findMatches(numbers, ...args) {
+//     const matches = []; 
+//    for (const number of args) {
+//   if (numbers.includes(number)){
+//     matches.push(number);
+//     }
+//    }
+//     return matches;
+//   }
 
 
 
@@ -558,6 +574,29 @@
 
 /* Завдання 34 автоперевірка
  */
+// МЕТОДИ ОБ'ЄКТА
+// Додай об'єкту bookShelf ще два методи, які поки що будуть повертати просто рядки за аналогією з getBooks() і addBook(bookName).
+// Метод removeBook(bookName) буде видаляти книгу за назвою. Повертає рядок "Deleting book <назва книги>", 
+// де <назва книги> - це значення параметра bookName.
+// Метод updateBook(oldName, newName) буде оновлювати назву книги на нову. Повертає рядок "Updating book <стара назва> to <нова назва>", 
+// де <стара назва> і <нова назва> - це значення параметрів oldName і newName відповідно.
+// const bookShelf = {
+//     books: ["The last kingdom", "The guardian of dreams"],
+//     getBooks() {
+//       return "Returning all books";
+//     },
+//     addBook(bookName) {
+//       return `Adding book ${bookName}`;
+//     },
+//     removeBook(bookName) {
+//   return `Deleting book ${bookName}`;
+//     },
+//     updateBook(oldName, newName) {
+//       return `Updating book ${oldName} to ${newName}`;
+//     }
+//   };
+
+
 
 
 
@@ -565,6 +604,16 @@
 
 /* Завдання 35 автоперевірка
  */
+// ДОСТУП ДО ВЛАСТИВОСТЕЙ ОБ'ЄКТА В ЙОГО МЕТОДАХ
+// Доповни метод updateBook(oldName, newName) таким чином, щоб він змінював назву книги з oldName на newName у властивості books. 
+// Використовуй indexOf() для того, щоб знайти потрібний елемент масиву, і splice() для того, щоб замінити цей елемент.
+// const bookShelf = {
+//     books: ["The last kingdom", "Haze", "The guardian of dreams"],
+//     updateBook(oldName, newName) {
+//   const book = this.books.indexOf(oldName)
+//   this.books.splice(book, 1, newName);
+//     },
+//   };
 
 
 
@@ -573,6 +622,13 @@
 
 /* Завдання 36 автоперевірка
  */
+// ЗАДАЧА. КРАМНИЦЯ ЗІЛЛЯ «У СТАРОЇ ЖАБИ»
+// До нас звернулася власниця крамниці зілля «У старої жаби» 
+// і замовила програму для ведення інвентарю - додавання, видалення, пошуку та оновлення зілля. 
+// Додай об'єкту atTheOldToad властивість potions, значенням якої зроби порожній масив.
+// const atTheOldToad = {
+//   potions: [],
+//   };
 
 
 
