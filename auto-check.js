@@ -1023,3 +1023,52 @@ const atTheOldToad = {
     },
   }; 
   
+
+/* MODULE 4
+ */
+
+/* Завдання 48 автоперевірка
+ */
+const getTotalBalanceByGender = (users, gender) => users.filter
+    (user=> user.gender === gender).reduce((total,user) =>{
+        return total+user.balance;
+   
+}, 0)
+
+/* Завдання 47 автоперевірка
+ */
+const getSortedFriends = users => 
+
+[...users].flatMap(user => user.friends).filter((friends, index, array) => array.indexOf(friends) === index).sort((a, b) => a.localeCompare(b));   
+
+/* Завдання 46 автоперевірка
+ */
+const getNamesSortedByFriendCount = users => 
+   [...users].sort((firstName, secondName) => firstName.friends.length -  secondName.friends.length).map(user => user.name);
+;
+;
+;
+
+/* Завдання 45 автоперевірка
+ */
+const names = [...books].filter((book => book.rating > MIN_BOOK_RATING)).map(book => book.author).sort((a,b) => a.localeCompare(b));
+
+
+/* Завдання 44 автоперевірка
+ */
+const sortByName = users => 
+[...users].sort((firstName, secondName) => firstName.name.localeCompare(secondName.name));
+;
+;
+
+/* Завдання 43 автоперевірка
+ */
+
+/* Завдання 42 автоперевірка
+ */
+
+/* Завдання 41 автоперевірка
+ */
+
+/* Завдання 40 автоперевірка
+ */
